@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interactive Periodic Table
+
+This project is an interactive periodic table built with Next.js and p5.js. It allows users to explore all 118 elements of the periodic table with detailed information and visualizations of atomic structures.
+
+## Features
+
+- Complete periodic table with all 118 elements
+- Color-coded element categories
+- Interactive element selection
+- Detailed element information including:
+  - Physical and chemical properties
+  - Electron configuration
+  - Discovery information
+  - Description and uses
+- Dynamic atomic structure visualization using p5.js
+  - Shows electron shells and distribution
+  - Animated electron movement
+  - Scales appropriately for elements with many electrons
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 16.8.0 or later
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+2. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
-```
+``` 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Use
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **View Element Details**: Click on any element in the periodic table to display detailed information and its atomic structure.
+- **Hover for Quick Info**: Hover over elements to see a quick tooltip with basic information.
+- **Explore Atomic Structure**: The atomic structure visualization shows the nucleus and electron shells with the correct number of electrons in each shell.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/) - React framework
+- [p5.js](https://p5js.org/) - JavaScript library for creative coding
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
+- CSS Modules - For component-scoped styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app` - Next.js app router components
+- `src/components` - React components
+  - `AtomicStructure.tsx` - p5.js visualization of atomic structure
+  - `ElementCell.tsx` - Individual element cell in the periodic table
+  - `ElementDetail.tsx` - Detailed element information display
+  - `PeriodicTable.tsx` - Main periodic table component
+- `src/data` - Data files
+  - `periodicTableData.ts` - Complete data for all 118 elements
+- `src/types` - TypeScript type definitions
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments
+
+- Data sourced from various scientific references
+- Inspired by educational periodic table visualizations

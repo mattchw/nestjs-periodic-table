@@ -1,0 +1,32 @@
+.periodicTable {
+  display: grid;
+  grid-template-columns: repeat(18, 60px);
+  grid-template-rows: repeat(10, 60px);
+  gap: 4px;
+  margin: 20px 0;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 12px;
+  padding-bottom: 100px;
+}
+
+.periodicTableContainer {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 12px;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.tooltipContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+} 

@@ -1,0 +1,90 @@
+.elementDetail {
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .elementDetail {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .animationContainer {
+    flex: 1;
+    max-width: 350px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.symbol {
+  font-size: 48px;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.info h2 {
+  margin: 0 0 10px 0;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.properties {
+  margin-bottom: 20px;
+}
+
+.properties h3 {
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+.animationButton {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.animationButton:hover {
+  background-color: #1976d2;
+}
+
+.animationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 

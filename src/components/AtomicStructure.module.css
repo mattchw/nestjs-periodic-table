@@ -1,0 +1,68 @@
+.atomicStructure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.canvasContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #121212;
+  margin-bottom: 10px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.proton {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff5722;
+  margin-right: 5px;
+}
+
+.electron {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2196f3;
+  margin-right: 5px;
+}
+
+.info {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .canvasContainer {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .legendItem {
+    font-size: 10px;
+  }
+  
+  .info {
+    font-size: 10px;
+  }
+} 
