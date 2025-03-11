@@ -1,5 +1,7 @@
 # Interactive Periodic Table
 
+![Periodic Table](./public/periodic-table.png)
+
 This project is an interactive periodic table built with Next.js and p5.js. It allows users to explore all 118 elements of the periodic table with detailed information and visualizations of atomic structures.
 
 ## Features
