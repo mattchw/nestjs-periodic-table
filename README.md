@@ -4,6 +4,10 @@
 
 This project is an interactive periodic table built with Next.js and p5.js. It allows users to explore all 118 elements of the periodic table with detailed information and visualizations of atomic structures.
 
+## Live Demo
+
+Check out the live application: [Interactive Periodic Table](https://nestjs-periodic-table-de5juxmhu-mattchws-projects.vercel.app/)
+
 ## Features
 
 - Complete periodic table with all 118 elements
