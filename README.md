@@ -6,7 +6,7 @@ This project is an interactive periodic table built with Next.js and p5.js. It a
 
 ## Live Demo
 
-Check out the live application: [Interactive Periodic Table](https://nestjs-periodic-table-de5juxmhu-mattchws-projects.vercel.app/)
+Check out the live application: [Interactive Periodic Table](https://nextjs-periodic-table.vercel.app/)
 
 ## Features
 
